@@ -4,8 +4,8 @@
 define(function(require,exports,module) {
     // Lets include the template
 
-    var out = new EJS({ url: 'ejs/base.ejs' }).render({ test: 1 }); // Render the template
-    document.getElementById('viewport').innerHTML = out;
+    //var out = new EJS({ url: 'ejs/base.ejs' }).render({ test: 1 }); // Render the template
+    //document.getElementById('viewport').innerHTML = out;
 
     var compass = require('kiteCompass');
 
