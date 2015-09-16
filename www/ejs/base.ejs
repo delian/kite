@@ -1,0 +1,87 @@
+
+<DIV data-role="page">
+    <DIV data-role="panel" data-position="left" data-display="overlay" id="menupanel">
+        Pesho
+    </DIV>
+    <IMG ID="topmenu" type="image/svg+xml" src="img/menu.svg" STYLE="position: absolute; top: 0; left: 0"/>
+    <H1><B>Kite Demo</B></H1>
+
+    <TABLE BORDER=0 WIDTH="100%">
+        <TR>
+            <TD WIDTH="20%"><DIV>Active:</DIV></TD>
+            <TD WIDTH="80%">
+                <div zclass="containing-element" STYLE="padding: 0 0 0 0; margin: 0 0 0 0;">
+                    <select name="flip-min" id="flip-min" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </div>
+            </TD>
+        </TR>
+        <TR>
+            <TD WIDTH="20%">Volume:</TD>
+            <TD WIDTH="80%">
+                <div class="ui-field-contain" STYLE="padding: 0 0 0 0; margin: 0 0 0 0;">
+                    <input type="range" name="slider-3" id="slider-3" value="25" min="0" max="100" data-theme="b" data-track-theme="a">
+                </div>
+            </TD>
+        </TR>
+        <TR>
+            <TD COLSPAN="2" WIDTH="100%">
+                <TABLE WIDTH="100%" BORDER="0">
+                    <TR>
+                        <TD WIDTH="50%" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            ALTITUDE:<BR>
+                            <B STYLE="font-size: 1.5em">100 m</B>
+                        </TD>
+                        <TD WIDTH="50%" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            ALT. DELTA:<BR>
+                            <B STYLE="font-size: 1.5em">10 m</B>
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="100%" COLSPAN="2" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            ALTITUDE HISTOGRAM:<BR>
+                            <SPAN ID="althistogram"></SPAN>
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="50%" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            V.Speed:<BR>
+                            <B STYLE="font-size: 1.5em">10 km/h</B>
+                        </TD>
+                        <TD WIDTH="50%" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            V.Speed AVG:<BR>
+                            <B STYLE="font-size: 1.5em">10 km/h</B>
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="100%" COLSPAN="2" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            V.SPEED HISTOGRAM:<BR>
+                            <SPAN ID="vspeedhistogram"></SPAN>
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="50%" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            <DIV STYLE="display: inline-block; position: relative; width: 100%">
+                                <DIV STYLE="margin-top: 100%">
+                                    <CANVAS ID="compass" WIDTH="200" HEIGHT="200" STYLE="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%"></CANVAS>
+                                </DIV>
+                            </DIV>
+                        </TD>
+                        <TD WIDTH="50%" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            Glide Ratio:
+                            <H2>10</H2>
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD WIDTH="100%" COLSPAN="2" ALIGN="CENTER" STYLE="border: 1px solid black">
+                            Effectiveness:<BR>
+                            <SPAN ID="effectivenesshist"></SPAN>
+                        </TD>
+                    </TR>
+                </TABLE>
+            </TD>
+        </TR>
+    </TABLE>
+</DIV>
