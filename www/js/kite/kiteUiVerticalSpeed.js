@@ -16,7 +16,7 @@ define(function(require,exports,module) {
     }
 
     function addData(a) {
-        a = parseInt(Math.random() * 3000);
+        //a = parseInt(Math.random() * 3000);
         //console.log('alt add',a,alPos);
         if (dPos<dCount) {
             data[dPos] = [dPos++, a];

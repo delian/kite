@@ -4,7 +4,18 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<preference name=\"AndroidPersistentFileLocation\" value=\"Internal\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
@@ -23,6 +34,9 @@
             "PACKAGE_NAME": "bg.dsmarter.kite"
         },
         "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "bg.dsmarter.kite"
+        },
+        "cordova-plugin-file": {
             "PACKAGE_NAME": "bg.dsmarter.kite"
         }
     },

@@ -28,4 +28,6 @@
     <plugin name="cordova-plugin-splashscreen" spec="~2.1.0" />
     <plugin name="cordova-plugin-geolocation" spec="~1.0.1" />
     <plugin name="cordova-plugin-device-motion" spec="~1.1.1" />
+    <plugin name="cordova-plugin-file" spec="~3.0.0" />
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
 </widget>

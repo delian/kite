@@ -8,8 +8,6 @@ define(function(require,exports,module) {
     var dCount = 100;
     var dPos = 0;
 
-    var oldAlt = null;
-
     for (var i = dCount-1; i>=0; i--) data[i]=[i,null];
 
     function draw() {
@@ -18,7 +16,7 @@ define(function(require,exports,module) {
     }
 
     function addData(a) {
-        a = parseInt(Math.random() * 3000);
+        //a = parseInt(Math.random() * 3000);
         //console.log('alt add',a,alPos);
         if (dPos<dCount) {
             data[dPos] = [dPos++, a];
@@ -34,13 +32,13 @@ define(function(require,exports,module) {
         var count = 0;
         var speed = 0;
         data.forEach(function(n) {
-            console.log('NN',n);
+            //console.log('NN',n);
             if (n[1] != null) {
                 speed += parseInt(n[1]);
                 count++;
             }
         });
-        console.log('Aaa',speed,count);
+        //console.log('Aaa',speed,count);
         $("#averageSpeed").html((speed/(count+0.0001)).toFixed(1)+' m/s');
     }
 
