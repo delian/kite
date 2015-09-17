@@ -46,6 +46,44 @@ module.exports = [
         "clobbers": [
             "navigator.barometer"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+        "id": "cordova-plugin-device-motion.Acceleration",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+        "id": "cordova-plugin-device-motion.accelerometer",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-motion/src/browser/AccelerometerProxy.js",
+        "id": "cordova-plugin-device-motion.AccelerometerProxy",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-device-motion/src/browser/accelerometer.js",
+        "id": "cordova-plugin-device-motion.accelerometer",
+        "merges": [
+            "navigator.accelerometer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -53,7 +91,10 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.0.0",
     "cordova-plugin-device-orientation": "1.0.1",
-    "org.dartlang.phonegap.barometer": "0.0.2"
+    "org.dartlang.phonegap.barometer": "0.0.2",
+    "cordova-plugin-splashscreen": "2.1.0",
+    "cordova-plugin-geolocation": "1.0.1",
+    "cordova-plugin-device-motion": "1.1.1"
 }
 // BOTTOM OF METADATA
 });

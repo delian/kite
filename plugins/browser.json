@@ -15,6 +15,15 @@
         },
         "org.dartlang.phonegap.barometer": {
             "PACKAGE_NAME": "bg.dsmarter.kite"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "bg.dsmarter.kite"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "bg.dsmarter.kite"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "bg.dsmarter.kite"
         }
     },
     "dependent_plugins": {}

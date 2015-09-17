@@ -25,4 +25,7 @@
     </platform>
     <plugin name="cordova-plugin-device-orientation" spec="~1.0.1" />
     <plugin name="org.dartlang.phonegap.barometer" spec="https://github.com/zanderso/cordova-plugin-barometer.git" />
+    <plugin name="cordova-plugin-splashscreen" spec="~2.1.0" />
+    <plugin name="cordova-plugin-geolocation" spec="~1.0.1" />
+    <plugin name="cordova-plugin-device-motion" spec="~1.1.1" />
 </widget>

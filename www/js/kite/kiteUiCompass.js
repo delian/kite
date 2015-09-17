@@ -3,7 +3,7 @@
  */
 define(function(require,exports,module) {
 
-    var watchID;
+    var sensors = require('kiteSensors');
 
     function compass() {
         var canvas = document.getElementById('compass');
@@ -38,16 +38,11 @@ define(function(require,exports,module) {
             degrees += 5;
         }
 
-        function compassSuccess(degrees) {
-            draw(degrees);
-        }
-
-        function compassError() {
-            alert('Compass error');
-        }
 
         function imgLoaded() { // Start the compass
-            watchID = navigator.compass.watchHeading(compassSuccess, compassError);
+            setInterval(function() {
+                draw(sensors.compass.heading);
+            },200);
         }
 
     }
