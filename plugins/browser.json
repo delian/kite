@@ -9,6 +9,12 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.dartlang.phonegap.barometer": {
+            "PACKAGE_NAME": "bg.dsmarter.kite"
         }
     },
     "dependent_plugins": {}

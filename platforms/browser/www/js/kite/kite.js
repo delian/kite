@@ -14,6 +14,5 @@ define(function(require,exports,module) {
         require('kiteUiAltitude')(); // Turn on the altitude UI
         require('kiteUiVerticalSpeed')(); // Turn on vertical speed
         require('kiteUiEffectiveness')(); // Turn on effectiveness
-
     },50);
 });

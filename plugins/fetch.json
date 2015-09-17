@@ -6,5 +6,22 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-device-orientation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device-orientation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.dartlang.phonegap.barometer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zanderso/cordova-plugin-barometer.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

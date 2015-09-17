@@ -2,6 +2,9 @@
  * Created by delian on 9/16/15.
  */
 define(function(require,exports,module) {
+
+    var watchID;
+
     function compass() {
         var canvas = document.getElementById('compass');
         // Canvas supported?
@@ -14,9 +17,7 @@ define(function(require,exports,module) {
         img.src = 'img/compass.png';
         img.onload = imgLoaded;
 
-        var degrees=0;
-
-        function draw()
+        function draw(degrees)
         {
             // Clear canvas
             ctx.fillStyle="#FFFFFF";
@@ -37,9 +38,18 @@ define(function(require,exports,module) {
             degrees += 5;
         }
 
-        function imgLoaded() {
-            setInterval(draw,200);
+        function compassSuccess(degrees) {
+            draw(degrees);
         }
+
+        function compassError() {
+            alert('Compass error');
+        }
+
+        function imgLoaded() { // Start the compass
+            watchID = navigator.compass.watchHeading(compassSuccess, compassError);
+        }
+
     }
     return compass;
 });
